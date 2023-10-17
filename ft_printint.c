@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   printfh.h                                          :+:      :+:    :+:   */
+/*   ft_printint.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 10:34:09 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/17 12:50:57 by mloureir         ###   ########.fr       */
+/*   Created: 2023/10/17 12:48:52 by mloureir          #+#    #+#             */
+/*   Updated: 2023/10/17 12:53:45 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SGOINFRE_PRINTFH_H
-# define SGOINFRE_PRINTFH_H
-# include <stdarg.h>
-# include <unistd.h>
+#include "printfh.h"
 
-int		ft_printf(const char *str, ...);
-void	ft_flags(const char *str, va_list strings);
-void	ft_printint(va_list strings);
+void	ft_printint(va_list strings)
+{
+	int		num;
+	char	toprint;
 
-#endif
+	num = va_args(strings, int);
+	toprint = (unsigned char)num;
+	write(1, &toprint, 1);
+}

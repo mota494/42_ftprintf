@@ -6,11 +6,11 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:44:09 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/17 11:56:00 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/17 12:48:31 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    flags(const char *str, va_list strings)
+void    ft_flags(const char *str, va_list strings)
 {
     int i;
 
@@ -19,9 +19,12 @@ void    flags(const char *str, va_list strings)
     {
         if (str[i] == '%')
         {
-            if (str[i + 1] == 'd')
+            i++;
+            if (str[i] == 'd')
+                ft_printint(strings);
         }
         else
             write (1, &str[i], 1);
+        i++;
     }
 }

@@ -6,7 +6,7 @@ Function | Description
 --|--|
 
 # Files
-Name | Status 
+Name | Status
 --|--|
-
+`ft_printf.c` | ⠀⏰
    

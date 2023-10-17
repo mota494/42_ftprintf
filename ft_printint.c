@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:48:52 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/17 12:53:45 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/17 16:50:14 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 void	ft_printint(va_list strings)
 {
 	int		num;
-	char	toprint;
 
-	num = va_args(strings, int);
-	toprint = (unsigned char)num;
-	write(1, &toprint, 1);
+	num = va_arg(strings, int);
+	ft_putnbr(num);
 }

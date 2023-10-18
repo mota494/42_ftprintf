@@ -6,13 +6,14 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:48:12 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/17 16:48:33 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 11:59:50 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printfh.h"
 
-void	ft_putchar(char c)
+void	ft_putchar(char c, int *count)
 {
 	write(1, &c, 1);
+	count = count + 1;
 }

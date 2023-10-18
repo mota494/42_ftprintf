@@ -6,24 +6,28 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:28:31 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 10:44:53 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 12:02:03 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "printfh.h"
-#include <stdio.h>
 
 int ft_printf(const char *str, ...)
 {
-	va_list strings;
+	va_list	strings;
+	int		count;
+
+	count = 0;
 	va_start(strings, str);
-	ft_flags(str, strings);
+	ft_flags(str, strings, &count);
 	va_end(strings);
-	return (0);
+	return (count);
 }
 
 int main()
 {
-	ft_printf("%x", 123);
+	int d;
+	d = ft_printf("%x \n\n", 123);
+	ft_printf("%d", d);
 	return (0);
 }

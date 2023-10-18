@@ -6,11 +6,11 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:28:31 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 12:02:03 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 12:25:53 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printfh.h"
+#include "ft_printf.h"
 
 int ft_printf(const char *str, ...)
 {
@@ -24,10 +24,10 @@ int ft_printf(const char *str, ...)
 	return (count);
 }
 
-int main()
-{
-	int d;
-	d = ft_printf("%x \n\n", 123);
-	ft_printf("%d", d);
-	return (0);
-}
+//int main()
+//{
+//	int d;
+//	d = ft_printf("%x \n\n", 16);
+//	ft_printf("%d", d);
+//	return (0);
+//}

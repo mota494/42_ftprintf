@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printfh.h"
+#include "ft_printf.h"
 
 void	ft_uphex(unsigned int num, int *count);
 void	ft_lowhex(unsigned int num, int *count);

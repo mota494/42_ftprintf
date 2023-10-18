@@ -16,10 +16,10 @@ $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
 clean:
-	$(RM) $(OBJS) $(BOBJS)
+	$(RM) $(OBJS)
 
 fclean:
-	$(RM) $(OBJS) $(BOBJS) $(NAME)
+	$(RM) $(OBJS) $(NAME)
 
 re: fclean all
 

@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:44:09 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 12:12:57 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 12:47:21 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void    ft_flags(const char *str, va_list strings, int *count)
 		{
 			i++;
 			if (str[i] == 'd' || str[i] == 'i' || str[i] == 'u')
-				ft_printint(strings, count);
+				ft_printint(str, i,strings, count);
 			if (str[i] == 'c')
 				ft_putchar(va_arg(strings, int), count);
 			if (str[i] == '%')
@@ -34,7 +34,10 @@ void    ft_flags(const char *str, va_list strings, int *count)
 				ft_hexamain(str, i, strings, count);
 		}
 		else
+		{
 			write(1, &str[i], 1);
+			*count += 1;
+		}
 		i++;
 	}
 }

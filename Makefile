@@ -1,7 +1,7 @@
 NAME = libftprintf.a
 CC= cc
 FLAGS= -Wall -Wextra -Werror
-SRC= ft_flags.c ft_printf.c ft_printint.c ft_putchar.c ft_putnbr.c
+SRC= ft_flags.c ft_printf.c ft_printint.c ft_putchar.c ft_putnbr.c ft_putstr.c ft_printhexa.c
 BSRC =
 RM = rm -rf
 OBJS=$(SRC:.c=.o)

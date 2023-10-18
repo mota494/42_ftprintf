@@ -6,6 +6,7 @@ Function | Description
 --|--|
 `ft_putchar.c` | Output a char to the standard output
 `ft_putnbr.c` | Output any number inserted to the standard output
+`ft_putstr.c` | Output any string inserted to the standard output
 
 # Files
 Name | Status
@@ -13,4 +14,4 @@ Name | Status
 `ft_printf.c` | ⠀⏰
 `ft_flags.c` | ⠀⏰
 `ft_printint.c` | ⠀⏰
-`ft_printf.c` | ⠀⏰
+`ft_printhexa.c` | ⠀⏰

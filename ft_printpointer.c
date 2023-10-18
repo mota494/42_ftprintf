@@ -1,50 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_printpointer.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/17 16:47:37 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 16:59:36 by mloureir         ###   ########.fr       */
+/*   Created: 2023/10/18 16:38:04 by mloureir          #+#    #+#             */
+/*   Updated: 2023/10/18 17:31:25 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putnbr(int n, int *count)
+void	ft_pointerputnbr(unsigned long n, int *count);
+
+void	ft_printpointer(unsigned long l, int *count)
 {
-	if (n == -2147483648)
+	if (!l)
 	{
-		ft_putchar('-', count);
-		ft_putchar('2', count);
-		n = 147483648;
-	}
-	if (n < 0)
-	{
-		ft_putchar('-', count);
-		n *= -1;
-	}
-	if (n >= 10)
-	{
-		ft_putnbr(n / 10, count);
-		ft_putnbr(n % 10, count);
+		write(1, "(nil)", 5);
+		*count += 5;
 	}
 	else
 	{
-		ft_putchar(n + 48, count);
+		write (1, "0x", 2);
+		*count += 2;
+		ft_pointerputnbr(l, count);
 	}
 }
 
-void	ft_unsputnbr(unsigned int n, int *count)
+void	ft_pointerputnbr(unsigned long n, int *count)
 {
-	if (n >= 10)
+	char hex[] = "0123456789abcdef";
+
+	if (n >= 16)
 	{
-		ft_putnbr(n / 10, count);
-		ft_putnbr(n % 10, count);
+		ft_pointerputnbr(n / 16, count);
+		ft_pointerputnbr(n % 16, count);
 	}
 	else
-	{
-		ft_putchar(n + 48, count);
-	}
+		ft_putchar(hex[n], count);
 }

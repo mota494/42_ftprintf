@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:34:09 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 13:19:48 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:59:50 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ void	ft_putchar(char c, int *count);
 void	ft_putstr(char *s, int *count);
 void	ft_hexamain(const char *str, int strpos, va_list strings, int *count);
 void	ft_unsputnbr(unsigned int n, int *count);
+void	ft_printpointer(unsigned long l, int *count);
 
 #endif

@@ -1,7 +1,7 @@
 NAME = libftprintf.a
-CC= cc
+CC= cc -g
 FLAGS= -Wall -Wextra -Werror
-SRC= ft_flags.c ft_printf.c ft_printhexa.c ft_printint.c ft_putchar.c ft_putnbr.c ft_putstr.c
+SRC= ft_flags.c ft_printf.c ft_printhexa.c ft_printint.c ft_printpointer.c ft_putchar.c ft_putnbr.c ft_putstr.c
 BSRC =
 RM = rm -rf
 OBJS=$(SRC:.c=.o)
@@ -26,5 +26,5 @@ re: fclean all
 #bonus: $(OBJS) $(BOBJS)
 #        ar rc $(NAME) $(OBJS) $(BOBJS)
 
-#exec:
-#	$(CC) $(SRC)
+exec:
+	$(CC) $(SRC)

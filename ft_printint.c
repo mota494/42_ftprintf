@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 12:48:52 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 14:38:43 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:59:41 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_printint(const char *str, int strpos,va_list strings, int *count)
 {
 	int					num;
-	unsigned int	unslong;
+	unsigned long		unslong;
 
 	if(str[strpos] == 'i' || str[strpos] == 'd')
 	{

@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 10:28:31 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 12:25:53 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 17:24:50 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ int ft_printf(const char *str, ...)
 //int main()
 //{
 //	int d;
-//	d = ft_printf("%x \n\n", 16);
+//	int *ptrD;
+//
+//	ptrD = &d;
+//	d = ft_printf("%p \n\n", -1);
 //	ft_printf("%d", d);
 //	return (0);
 //}

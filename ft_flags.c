@@ -6,7 +6,7 @@
 /*   By: mloureir <mloureir@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 11:44:09 by mloureir          #+#    #+#             */
-/*   Updated: 2023/10/18 13:00:49 by mloureir         ###   ########.fr       */
+/*   Updated: 2023/10/18 16:39:43 by mloureir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ void    ft_flags(const char *str, va_list strings, int *count)
 				ft_putstr(va_arg(strings, char *), count);
 			if (str[i] == 'x' || str[i] == 'X')
 				ft_hexamain(str, i, strings, count);
+			if (str[i] == 'p')
+				ft_printpointer(va_arg(strings, unsigned long), count);
 		}
 		else
 		{

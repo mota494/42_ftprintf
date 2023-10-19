@@ -6,8 +6,6 @@
 
 ### Recreating the C standard library function `printf()`
 
-</div>
-
 # libft functions used
 Function | Description
 --|--|
@@ -23,3 +21,5 @@ Name | Description | Status
 `ft_printint.c` | Prints integers, doubles and unsigned int | ⠀✔️
 `ft_printhexa.c` | Prints any number in it's hexadecimal | ⠀✔️
 `ft_printpointer.c` | Prints the address of the pointer received | ⠀✔️ 
+
+</div>

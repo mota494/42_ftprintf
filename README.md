@@ -16,9 +16,10 @@ Function | Description
 `ft_putstr.c` | Output any string inserted to the standard output
 
 # Files
-Name | Status
---|--|
-`ft_printf.c` | ⠀⏰
-`ft_flags.c` | ⠀⏰
-`ft_printint.c` | ⠀⏰
-`ft_printhexa.c` | ⠀⏰
+Name | Status | Description
+--|--|--
+`ft_printf.c` | ⠀✔️ | Receives the arguments and sends them to a function to print them
+`ft_flags.c` | ⠀✔️ | Receives the flags and sends them to the functions that will print it
+`ft_printint.c` | ⠀✔️ | Prints integers, doubles and unsigned int
+`ft_printhexa.c` | ⠀✔️ | Prints any number in it's hexadecimal
+`ft_printpointer.c` | ⠀✔️ | Prints the address of the pointer received

@@ -2,7 +2,7 @@
 
 # 42_ftprintf
 ![Static Badge](https://img.shields.io/badge/score-%3F%2F100-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
-![Static Badge](https://img.shields.io/badge/language-C-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
+![Static Badge](https://img.shields.io/badge/language-blue?style=for-the-badge&logo=C&labelColor=%232312263)
 
 ### Recreating the C standard library function `printf()`
 

@@ -16,11 +16,11 @@ Function | Description
 # Files
 Name | Description | Status 
 --|--|--
-`ft_printf.c`| Receives the arguments and sends them to a function to print them | ⠀✔️
-`ft_flags.c` | Receives the flags and sends them to the functions that will print it | ⠀✔️
-`ft_printint.c` | Prints integers, doubles and unsigned int | ⠀✔️
-`ft_printhexa.c` | Prints any number in it's hexadecimal | ⠀✔️
-`ft_printpointer.c` | Prints the address of the pointer received | ⠀✔️ 
+`ft_printf.c`| Receives the arguments and sends them to a function to print them | ⠀✔
+`ft_flags.c` | Receives the flags and sends them to the functions that will print it | ⠀✔
+`ft_printint.c` | Prints integers, doubles and unsigned int | ⠀✔
+`ft_printhexa.c` | Prints any number in it's hexadecimal | ⠀✔
+`ft_printpointer.c` | Prints the address of the pointer received | ⠀✔
 
 </div>
 

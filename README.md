@@ -28,7 +28,8 @@ Name | Description | Status
 
 # More info
 
-### Functions Map
+<b>Functions Map</b>
+
 ```mermaid
 graph TD
 	ft_printf-->ft_flags-->transport

@@ -28,23 +28,17 @@ Name | Description | Status
 
 # More info
 
-</div>
-
-In both ft_printhexa.c file and ft_printpointer.c there's a function that only calls the function that actually prints the specific type, this was only done because of the Norm in 42. There's no reason to use this ft_printf instead of the actual printf, but in case you want to do it i recommend just creating a variable inside of the putnbr hex and pointer like this
-
-
-```c
-void	ft_putnbrhex(unsigned int num, char *hex, int *count)
-{
-  char *hex[] = "0123456789ABCDEF";
-	if (num >= 16)
-	{
-		ft_putnbrhex(num / 16, hex, count);
-		ft_putnbrhex(num % 16, hex, count);
-	}
-	else
-		ft_putchar(hex[num], count);
-}
+## Functions Map
+```mermaid
+graph TD
+	ft_printf-->ft_flags-->transport
+	transport-->ft_printint
+		ft_printint-->ft_unsputnbr-->ft_putchar
+		ft_printint-->ft_putnbr-->ft_putchar
+	transport-->ft_putstr-->ft_putchar
+	transport-->ft_hexamain-->ft_lowhex-->ft_putnbrhex-->ft_putchar
+	ft_hexamain-->ft_uphex-->ft_putnbrhex-->ft_putchar
+	transport-->ft_printpointer-->ft_hexdefine-->ft_pointerputnbr-->ft_putchar
 ```
 
-If you want to use or test this code you just have to clone the repository, include the header in your .c file and also compile all the .c files in this repo.
+</div>

@@ -37,7 +37,7 @@ graph TD
 		ft_printint-->ft_unsputnbr-->ft_putchar
 		ft_printint-->ft_putnbr-->ft_putchar
 	transport-->ft_putstr-->ft_putchar
-	transport-->ft_hexamain-->ft_lowhex-->ft_putnbrhex-->ft_putchar
+	transport-->ft_hexamain-->ft_lowhex-->ft_putnbrhex
 	ft_hexamain-->ft_uphex-->ft_putnbrhex-->ft_putchar
 	transport-->ft_printpointer-->ft_hexdefine-->ft_pointerputnbr-->ft_putchar
 ```

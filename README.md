@@ -31,7 +31,7 @@ Name | Description | Status
 <b>Functions Map</b>
 
 ```mermaid
-graph TD
+graph LR
 	ft_printf-->ft_flags-->transport
 	transport-->ft_printint
 		ft_printint-->ft_unsputnbr-->ft_putchar

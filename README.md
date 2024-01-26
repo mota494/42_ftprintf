@@ -4,6 +4,8 @@
 ![Static Badge](https://img.shields.io/badge/score-%3100%2F100-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 ![Static Badge](https://img.shields.io/badge/language-C-green?style=for-the-badge&labelColor=%2312263A&color=%2306BCC1)
 
+[![Static Badge](https://img.shields.io/badge/Music%20Suggestion-Click%20Me?style=for-the-badge&logo=YouTube&logoColor=%23000000&labelColor=%23FFFFFF&color=%23FF0000)](https://www.youtube.com/watch?v=hCI8ki34p1E)
+
 ### Recreating the C standard library function printf()
 
 # libft functions used
